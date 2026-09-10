@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "csprimer"
+version = "0.1.0"
+description = "A monorepo for CS primer modules"
+authors = ["Your Name <you@example.com>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "9.1.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
