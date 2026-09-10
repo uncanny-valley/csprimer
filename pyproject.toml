@@ -2,7 +2,7 @@
 name = "csprimer"
 version = "0.1.0"
 description = "A monorepo for CS primer modules"
-authors = ["Your Name <you@example.com>"]
+authors = ["uncanny-valley"]
 license = "MIT"
 readme = "README.md"
 
@@ -11,7 +11,36 @@ python = "^3.12"
 
 [tool.poetry.group.dev.dependencies]
 pytest = "9.1.1"
+hypothesis = "^6.168.0"
+ruff = "^0.16.7"
+mypy = "^2.3.1"
+pre-commit = "^4.6.2"
 
 [build-system]
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
+
+
+[tool.ruff]
+target-version = "py311"
+line-length = 88
+
+[tool.ruff.lint]
+select = [
+    "E",   # pycodestyle errors
+    "W",   # pycodestyle warnings
+    "F",   # pyflakes (basic syntax & variable errors)
+    "I",   # isort (import sorting)
+    "B",   # flake8-bugbear (common design issues/bugs)
+    "C90", # mccabe complexity
+    "UP",  # pyupgrade (suggests modern Python syntax)
+]
+ignore = []
+
+[tool.ruff.lint.mccabe]
+max-complexity = 10
+
+[tool.mypy]
+strict = true
+warn_unreachable = true
+warn_unused_ignores = true
