@@ -111,6 +111,16 @@ files = [
 ]
 
 [[package]]
+name = "hexdump"
+version = "3.3"
+description = "dump binary data to hex format and restore from there"
+optional = false
+python-versions = "*"
+files = [
+    {file = "hexdump-3.3.zip", hash = "sha256:d781a43b0c16ace3f9366aade73e8ad3a7bd5137d58f0b45ab2d3f54876f20db"},
+]
+
+[[package]]
 name = "hypothesis"
 version = "6.168.0"
 description = "The property-based testing library for Python"
@@ -763,4 +773,4 @@ python-discovery = ">=1.6"
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.12"
-content-hash = "dbd23e16ba8382d0bccd9daf250e9bbfb86a3d5bbb065ed61622d0cf8c6e05bd"
+content-hash = "be4c0a9897fa63fa26aa4913e7aa7b0ebc0eacbf2bebd78f744dde5b7908cc00"
